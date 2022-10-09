@@ -1,0 +1,22 @@
+def day_check(x):
+    try:
+        x = int(x)
+        if 0 < x < 8:
+            if x < 6:
+                print('This day is a working day')
+            else:
+                print('This day is not a working day')
+        else:
+            print('Invalid number')
+    except:
+        print('not a number')
+
+
+agree = 1
+while agree:
+    a = input('Enter a number of a day of the week\n')
+    day_check(a)
+    print("Again? Press 'N' to exit, press any other key to continue")
+    answer = input()
+    if answer == 'N' or answer == 'n':
+        agree = 0
