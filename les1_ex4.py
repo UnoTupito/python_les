@@ -23,6 +23,7 @@ def get_operation():
             return op
         else:
             print('Enter a valid operation')
+            print(operations)
             return None
     except:
         print('Enter a valid operation')
