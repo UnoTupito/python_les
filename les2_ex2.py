@@ -34,6 +34,6 @@ while do:
     print("Again? Press 'N' to exit, press any other key to continue")
     want = input()
     if want == 'N' or want == 'n':
-        do = 0
+        do = False
 
 
