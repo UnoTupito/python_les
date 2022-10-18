@@ -4,13 +4,6 @@
 #*Пример:* - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
 
-def get_number():
-    try:
-        a = int(input('Enter a number\n'))
-        return a
-    except:
-        print('Enter a valid number')
-
 
 def fill_list():
     add = True
@@ -25,7 +18,6 @@ def fill_list():
     return filled_list
 
 
-
 def count_sum(working_list):
     needed_sum = 0
     for i in range(1, len(working_list)):
@@ -35,8 +27,6 @@ def count_sum(working_list):
 
 
 working_list = []
-
-print(working_list)
 try:
     working_list = fill_list()
 except:
