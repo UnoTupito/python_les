@@ -4,17 +4,16 @@
 #*Пример:* - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
 
-
 def fill_list():
     add = True
     filled_list = []
     while add:
         print("Add a number to your list. Press 'N' to exit")
-        add = input()
-        if add == 'N' or add == 'n':
+        a = input()
+        if a == 'N' or a == 'n':
             add = False
         else:
-            filled_list.append(int(add))
+            filled_list.append(int(a))
     return filled_list
 
 

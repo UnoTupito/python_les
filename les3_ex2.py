@@ -3,11 +3,11 @@ def fill_list():
     filled_list = []
     while add:
         print("Add a number to your list. Press 'N' to exit")
-        add = input()
-        if add == 'N' or add == 'n':
+        a = input()
+        if a == 'N' or a == 'n':
             add = False
         else:
-            filled_list.append(int(add))
+            filled_list.append(int(a))
     return filled_list
 
 
