@@ -19,9 +19,12 @@ def compress_str(g_str):
     return com_str
 
 
-given_str = input('Enter your text to compress:\n')
+with open('les5_ex2_read.txt', 'r') as data_to_compress:
+    given_str = data_to_compress.read()
 compressed_str = compress_str(given_str)
 print(compressed_str)
+with open('les5_ex2_write.txt', 'w') as data_compressed:
+    data_compressed.write(compressed_str)
 
 
 # AAAAAAFDDCCCCCCCAEEEEEEEEEEEEEEEEE
